@@ -1,0 +1,150 @@
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : spliced 7f65bbaa5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1465393640.764159720
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : spliced 7f65bbaa5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1465393640.767628093
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : spliced 7f65bbaa5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1465393640.768113402
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : spliced 7f65bbaa5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393640.768779427
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : ddsi2 7f65b90ad700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393640.776566945
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:20 CST 2016
+Description : The durability service can by identified by ID: 155172835
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : durability 7f65b941c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1465393640.880578225
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : spliced 7f1e68fe8700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1465393646.283370945
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : spliced 7f1e68fe8700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1465393646.287268936
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : spliced 7f1e68fe8700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1465393646.287550093
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : spliced 7f1e68fe8700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393646.288003103
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : ddsi2 7f1e667fd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393646.295463706
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:26 CST 2016
+Description : The durability service can by identified by ID: 1678815662
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : durability 7f1e66b6c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1465393646.599892060
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:33 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : durability 7f65b941c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393653.999256503
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:34 CST 2016
+Description : Termination request (signal 2) received from PID 9416 (self), UID 1000
+Node        : ubuntu
+Process     : subscriber <9416>
+Thread      : signalHandler 7f1e6724d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1465393654.630007524
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 08 21:47:35 CST 2016
+Description : Termination request (signal 2) received from PID 9368 (self), UID 1000
+Node        : ubuntu
+Process     : publisher <9368>
+Thread      : signalHandler 7f65b9d0a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1465393655.623024472
