@@ -1,0 +1,24 @@
+========================================================================================
+Report      : API_INFO
+Date        : Wed Jun 22 20:42:27 CST 2016
+Description : specified instance does not belong to writer micros_swarm_frameworkWriter
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : main thread 7fe1b596d780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_writerWrite/v_writer.c/2208/0/1466599347.998149273
+========================================================================================
+Report      : API_INFO
+Date        : Wed Jun 22 20:42:47 CST 2016
+Description : specified instance does not belong to writer micros_swarm_frameworkWriter
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : main thread 7f642c16c780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_writerWrite/v_writer.c/2208/0/1466599367.898249994
+========================================================================================
+Report      : API_INFO
+Date        : Wed Jun 22 20:46:52 CST 2016
+Description : specified instance does not belong to writer micros_swarm_frameworkWriter
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : main thread 7f43fa705780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_writerWrite/v_writer.c/2208/0/1466599612.535105234

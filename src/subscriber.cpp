@@ -1,28 +1,6 @@
-/*
- *                         OpenSplice DDS
- *
- *   This software and documentation are Copyright 2006 to 2013 PrismTech
- *   Limited and its licensees. All rights reserved. See file:
- *
- *                     $OSPL_HOME/LICENSE
- *
- *   for full copyright notice and license terms.
- *
- */
-
-/************************************************************************
- * LOGICAL_NAME:    MessageBoard.cpp
- * FUNCTION:        OpenSplice NetworkPartition example code.
- * MODULE:          NetworkPartition example.
- * DATE             june 2007.
- ************************************************************************
- *
- * This file contains the implementation for the 'MessageBoard' executable.
- *
- ***/
 
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "ccpp_dds_dcps.h"
 #include "check_status.h"
 #include "ccpp_MSFPPacket.h"
@@ -35,8 +13,10 @@ using namespace DDS;
 
 namespace micros_swarm_framework{
     
-    Subscriber::Subscriber()
+    Subscriber::Subscriber(std::string topic_name)
     {
+        topic_name_ = topic_name.data();
+        
         packetSeq = new MSFPPacketSeq();
         infoSeq = new SampleInfoSeq();
         domain = 0;
@@ -75,7 +55,7 @@ namespace micros_swarm_framework{
 
         //Use the changed policy when defining the MSFPPacket topic
         MSFPPacketTopic = participant->create_topic(
-            "micros_swarm_framework_topic",
+            topic_name_,
             MSFPPacketTypeName,
             topic_qos,
             NULL,
@@ -88,7 +68,7 @@ namespace micros_swarm_framework{
         sub_qos.partition.name.length(1);
         sub_qos.partition.name[0] = partitionName;
 
-        //Create a Subscriber for the MessageBoard application/
+        //Create a Subscriber for the MessageBoard application
         subscriber_ = participant->create_subscriber(sub_qos, NULL, STATUS_MASK_NONE);
         checkHandle(subscriber_.in(), "DDS::DomainParticipant::create_subscriber");
 
@@ -110,7 +90,7 @@ namespace micros_swarm_framework{
         cout << "subscriber_ started..."<< endl;
     }
     
-    void Subscriber::subscribe(std::string topic)
+    void Subscriber::subscribe()
     {
         MSFPPacketListener *myListener = new MSFPPacketListener();
         myListener->MSFPPacketDR_ = MSFPPacketDataReader::_narrow(MSFPPacketDR.in());
@@ -124,20 +104,20 @@ namespace micros_swarm_framework{
         myListener->closed_ = false;
 
     
-        // waitset used to avoid spinning in the loop below
+        //waitset used to avoid spinning in the loop below
         DDS::WaitSet_var ws = new DDS::WaitSet();
         ws->attach_condition(myListener->guardCond_);
         DDS::ConditionSeq condSeq;
         while (!myListener->closed_)
         {
-            // To avoid spinning here. We can either use a sleep or better a WaitSet.
+            //To avoid spinning here. We can either use a sleep or better a WaitSet.
             ws->wait(condSeq, timeout);
             myListener->guardCond_->set_trigger_value(false);
         }
         cout << "=== [MSFPPacketSubscriber] Market Closed." << endl;
     }
     
-    void Subscriber::subscribe2(std::string topic)
+    void Subscriber::subscribe2()
     {
         while(!terminated)
         {
@@ -188,11 +168,3 @@ namespace micros_swarm_framework{
     }
 };
 
-/*
-int main()
-{
-    micros_swarm_framework::Subscriber subscriber;
-    subscriber.subscribe("micros_swarm_framework_topic");
-    return 0;
-}
-*/

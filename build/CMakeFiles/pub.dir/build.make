@@ -81,6 +81,9 @@ pub_EXTERNAL_OBJECTS =
 
 ../bin/pub: CMakeFiles/pub.dir/src/pub.cpp.o
 ../bin/pub: CMakeFiles/pub.dir/build.make
+../bin/pub: /home/cxf/HDE/x86_64.linux/lib/libddskernel.so
+../bin/pub: /home/cxf/HDE/x86_64.linux/lib/libdcpsisocpp.so
+../bin/pub: /home/cxf/HDE/x86_64.linux/lib/libdcpssacpp.so
 ../bin/pub: ../lib/libopensplice_dds_pub_sub.so
 ../bin/pub: CMakeFiles/pub.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/pub"

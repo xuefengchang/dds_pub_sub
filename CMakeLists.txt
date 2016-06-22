@@ -39,8 +39,8 @@ target_link_libraries(pub
     ${DATAMODEL} 
     ${OpenSplice_LIBRARIES}
     opensplice_dds_pub_sub
-    libddskernel.so 
-    libdcpsisocpp.so 
+    libddskernel.so
+    libdcpsisocpp.so
     libdcpssacpp.so
     -lpthread
 )
@@ -50,8 +50,8 @@ target_link_libraries(sub
     ${DATAMODEL} 
     ${OpenSplice_LIBRARIES}
     opensplice_dds_pub_sub
-    libddskernel.so 
-    libdcpsisocpp.so 
+    libddskernel.so
+    libdcpsisocpp.so
     libdcpssacpp.so
     -lpthread
 )

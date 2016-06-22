@@ -138,3 +138,1175 @@ Node        : ThinkCentre
 Process     : pub <2442>
 Thread      : signalHandler 7f6036c30700
 Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466584729.791327759
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : spliced 7efe3963a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466598397.256194129
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : spliced 7efe3963a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466598397.265653374
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : spliced 7efe3963a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466598397.265809893
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : spliced 7efe3963a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598397.266095986
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : ddsi2 7efe36bda700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598397.293370248
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:37 CST 2016
+Description : The durability service can by identified by ID: 1732292710
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : durability 7efe36f9e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466598397.386989422
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : spliced 7f56c6d7b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466598403.840768153
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : spliced 7f56c6d7b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466598403.853193468
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : spliced 7f56c6d7b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466598403.853551704
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : spliced 7f56c6d7b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598403.854383156
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : ddsi2 7f56c4370700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598403.863127938
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:43 CST 2016
+Description : The durability service can by identified by ID: 534709903
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : durability 7f56c46df700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466598403.868049182
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:49 CST 2016
+Description : Termination request (signal 2) received from PID 8593 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <8593>
+Thread      : signalHandler 7f56c4fcd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466598409.603481672
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:50 CST 2016
+Description : Termination request (signal 2) received from PID 8536 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <8536>
+Thread      : signalHandler 7efe3788c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466598410.123439602
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : spliced 7fbda3bcf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466598412.072763810
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : spliced 7fbda3bcf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466598412.086055857
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : spliced 7fbda3bcf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466598412.086421928
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : spliced 7fbda3bcf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598412.087230939
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : ddsi2 7fbda11c4700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598412.095199509
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:52 CST 2016
+Description : The durability service can by identified by ID: 453790413
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : durability 7fbda1533700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466598412.101887123
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : spliced 7fca4debe700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466598414.592503133
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : spliced 7fca4debe700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466598414.596205279
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : spliced 7fca4debe700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466598414.596290336
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : spliced 7fca4debe700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598414.596502186
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : ddsi2 7fca4b4b3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466598414.599050050
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:54 CST 2016
+Description : The durability service can by identified by ID: 481769339
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : durability 7fca4b822700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466598414.601258079
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:59 CST 2016
+Description : Termination request (signal 2) received from PID 8697 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <8697>
+Thread      : signalHandler 7fca4c110700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466598419.547375018
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:26:59 CST 2016
+Description : Termination request (signal 2) received from PID 8645 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <8645>
+Thread      : signalHandler 7fbda1e21700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466598419.939407906
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : spliced 7f13e93bf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599341.097353881
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : spliced 7f13e93bf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599341.109899540
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : spliced 7f13e93bf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599341.110243292
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : spliced 7f13e93bf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599341.110917181
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : ddsi2 7f13e69b4700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599341.118481324
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:21 CST 2016
+Description : The durability service can by identified by ID: 1753253819
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : durability 7f13e6d23700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599341.124790795
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : spliced 7fe1b59a1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599346.793664271
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : spliced 7fe1b59a1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599346.806813397
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : spliced 7fe1b59a1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599346.807110948
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : spliced 7fe1b59a1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599346.807835099
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : ddsi2 7fe1b2f96700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599346.815980058
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:26 CST 2016
+Description : The durability service can by identified by ID: 1717669103
+Node        : ThinkCentre
+Process     : pub <9935>
+Thread      : durability 7fe1b3305700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599346.822965747
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:31 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : durability 7f13e6d23700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599351.836539312
+========================================================================================
+Report      : WARNING
+Date        : Wed Jun 22 20:42:37 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 1717669103. (DCPSPublication state 1)
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : OSPL Garbage Collector 7f13e7003700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1466599357.112665331
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:39 CST 2016
+Description : Termination request (signal 2) received from PID 9878 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <9878>
+Thread      : signalHandler 7f13e7611700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599359.620504953
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : spliced 7f642c1a0700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599366.696577336
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : spliced 7f642c1a0700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599366.707100231
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : spliced 7f642c1a0700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599366.707366675
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : spliced 7f642c1a0700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599366.708083287
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : ddsi2 7f6429795700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599366.716448627
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:42:46 CST 2016
+Description : The durability service can by identified by ID: 1508267361
+Node        : ThinkCentre
+Process     : pub <9999>
+Thread      : durability 7f6429b04700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599366.722557600
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : spliced 7f327fcaf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599419.431754053
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : spliced 7f327fcaf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599419.434878239
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : spliced 7f327fcaf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599419.434964708
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : spliced 7f327fcaf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599419.435209744
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : ddsi2 7f327d2a4700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599419.437794045
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:39 CST 2016
+Description : The durability service can by identified by ID: 708553868
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : durability 7f327d613700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599419.440330098
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:43:44 CST 2016
+Description : Termination request (signal 2) received from PID 10145 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <10145>
+Thread      : signalHandler 7f327df01700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599424.821650240
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : spliced 7f43fa739700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599611.328924108
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : spliced 7f43fa739700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599611.333953073
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : spliced 7f43fa739700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599611.334095501
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : spliced 7f43fa739700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599611.334499451
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : ddsi2 7f43cfc90700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599611.338774946
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:46:51 CST 2016
+Description : The durability service can by identified by ID: 316577290
+Node        : ThinkCentre
+Process     : pub <10424>
+Thread      : durability 7f43cffff700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599611.342409005
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : spliced 7f25a7955700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599760.143625699
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : spliced 7f25a7955700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599760.156174752
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : spliced 7f25a7955700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599760.156521485
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : spliced 7f25a7955700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599760.157209665
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : ddsi2 7f25a4f4e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599760.165422903
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:20 CST 2016
+Description : The durability service can by identified by ID: 1591154877
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : durability 7f25a52bd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599760.171145213
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:49:24 CST 2016
+Description : Termination request (signal 2) received from PID 10663 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <10663>
+Thread      : signalHandler 7f25a5bab700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599764.804992717
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : spliced 7fa43207b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599888.552309291
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : spliced 7fa43207b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599888.556002430
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : spliced 7fa43207b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599888.556136079
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : spliced 7fa43207b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599888.556471353
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : ddsi2 7fa42f670700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599888.561158435
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:28 CST 2016
+Description : The durability service can by identified by ID: 1807569211
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : durability 7fa42f9df700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599888.563738033
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : durability 7fa42f9df700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599895.570255165
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : spliced 7f5345f6d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599895.929188245
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : spliced 7f5345f6d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599895.934011874
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : spliced 7f5345f6d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599895.934154647
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : spliced 7f5345f6d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599895.934480567
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:35 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : ddsi2 7f5343562700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599895.938564848
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:36 CST 2016
+Description : The durability service can by identified by ID: 1062139089
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : durability 7f53438d1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599896.041698360
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:43 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : durability 7f53438d1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599903.548973614
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:46 CST 2016
+Description : Termination request (signal 2) received from PID 10876 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <10876>
+Thread      : signalHandler 7fa4302cd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599906.605236169
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:48 CST 2016
+Description : Termination request (signal 2) received from PID 10933 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <10933>
+Thread      : signalHandler 7f53441bf700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599908.429176641
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : spliced 7fd4d659d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599909.856022867
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : spliced 7fd4d659d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599909.858932938
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : spliced 7fd4d659d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599909.859037224
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : spliced 7fd4d659d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599909.859353215
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : ddsi2 7fd4afb32700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599909.861933745
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:49 CST 2016
+Description : The durability service can by identified by ID: 438197369
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : durability 7fd4d4160700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599909.864203555
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : spliced 7fdcbd201700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599913.034192832
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : spliced 7fdcbd201700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599913.039239764
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : spliced 7fdcbd201700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599913.039373356
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : spliced 7fdcbd201700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599913.039660066
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : ddsi2 7fdcba7f6700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599913.043509359
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:53 CST 2016
+Description : The durability service can by identified by ID: 737815595
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : durability 7fdcbab65700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599913.046081018
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:51:59 CST 2016
+Description : Termination request (signal 2) received from PID 11043 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <11043>
+Thread      : signalHandler 7fdcbb453700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599919.629144723
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:03 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : durability 7fd4d4160700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599923.178922709
+========================================================================================
+Report      : WARNING
+Date        : Wed Jun 22 20:52:09 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 737815595. (DCPSPublication state 1)
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : OSPL Garbage Collector 7fd4d41e1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1466599929.879283112
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:29 CST 2016
+Description : Termination request (signal 2) received from PID 10990 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <10990>
+Thread      : signalHandler 7fd4d47ef700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599949.461325059
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : spliced 7f7de3dee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599953.198968199
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : spliced 7f7de3dee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599953.207147147
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : spliced 7f7de3dee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599953.207348404
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : spliced 7f7de3dee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599953.207805964
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : ddsi2 7f7de13e3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599953.212266392
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:33 CST 2016
+Description : The durability service can by identified by ID: 1284964148
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : durability 7f7de1752700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599953.216142505
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : spliced 7f856fe38700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466599958.712434749
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : spliced 7f856fe38700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466599958.715253241
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : Service cmsoap disabled
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : spliced 7f856fe38700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466599958.715368713
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : spliced 7f856fe38700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599958.715679933
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : ddsi2 7f856d42d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599958.718334836
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:38 CST 2016
+Description : The durability service can by identified by ID: 739451298
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : durability 7f856d79c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466599958.721016202
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:46 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : durability 7f7de1752700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599966.128870100
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:48 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : durability 7f856d79c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466599968.630464564
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:51 CST 2016
+Description : Termination request (signal 2) received from PID 11164 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <11164>
+Thread      : signalHandler 7f7de2040700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599971.613440013
+========================================================================================
+Report      : INFO
+Date        : Wed Jun 22 20:52:52 CST 2016
+Description : Termination request (signal 2) received from PID 11241 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <11241>
+Thread      : signalHandler 7f856e08a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466599972.053119339

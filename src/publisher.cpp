@@ -1,25 +1,4 @@
-/*
- *                         OpenSplice DDS
- *
- *   This software and documentation are Copyright 2006 to 2013 PrismTech
- *   Limited and its licensees. All rights reserved. See file:
- *
- *                     $OSPL_HOME/LICENSE
- *
- *   for full copyright notice and license terms.
- *
- */
 
-/************************************************************************
- * LOGICAL_NAME:    Chatter.cpp
- * FUNCTION:        OpenSplice NetworkPartition example code.
- * MODULE:          NetworkPartition example.
- * DATE             june 2007.
- ************************************************************************
- *
- * This file contains the implementation for the 'Chatter' executable.
- *
- ***/
 #include <string>
 #include <iostream>
 #include "ccpp_dds_dcps.h"
@@ -33,10 +12,12 @@ using namespace DDS;
 
 namespace micros_swarm_framework{
     
-    Publisher::Publisher()
+    Publisher::Publisher(std::string topic_name)
     {
         domain = 0;
-        sourceID = 1;
+        
+        topic_name_ = topic_name.data();
+        
         partitionName = "test";
         MSFPPacketTypeName = NULL;
         
@@ -66,7 +47,7 @@ namespace micros_swarm_framework{
 
         //Use the changed policy when defining the MSFPPacket topic
         MSFPPacketTopic = participant->create_topic(
-            "micros_swarm_framework_topic",
+            topic_name_,
             MSFPPacketTypeName,
             topic_qos,
             NULL,
@@ -96,7 +77,7 @@ namespace micros_swarm_framework{
         checkHandle(MSFPPacketDW.in(), "NetworkPartitionsData::MSFPPacketDataWriter::_narrow");
         
         packet_=new micros_swarm_framework::MSFPPacket();
-        packet_->packet_source = 1;
+        packet_->packet_source = 0;
         packet_->packet_version = 0;
         packet_->packet_type = 0;
         packet_->packet_data = "";
@@ -109,6 +90,7 @@ namespace micros_swarm_framework{
     {  
         packet_ = packet;
 
+        userHandle = MSFPPacketDW->register_instance(*packet_);
         status = MSFPPacketDW->write(*packet_, userHandle);
         checkStatus(status, "NetworkPartitionsData::MSFPPacketDataWriter::write");
     }
@@ -144,29 +126,3 @@ namespace micros_swarm_framework{
         cout << "Completed ter example" << endl;
     }
 };
-
-/*
-int main()
-{
-    micros_swarm_framework::MSFPPacket *packet;
-    char buf[MAX_PACKET_LEN];
-    packet = new micros_swarm_framework::MSFPPacket();
-    checkHandle(packet, "new MSFPPacket");
-    
-    micros_swarm_framework::Publisher publisher;
-    
-    for (int i = 1; i <= NUM_PACKET; i++) {
-        packet->packet_source = 1;
-        packet->packet_version = 0;
-        packet->packet_type = 0;
-        snprintf(buf, MAX_PACKET_LEN, "Packet no. %d", i);
-        packet->packet_data = string_dup(buf);
-        packet->package_check_sum=0;
-        cout << "Writing packet: \"" << packet->packet_data << "\"" << endl;
-        publisher.publish(packet);
-        sleep (1); 
-    }
-
-    return 0;
-}
-*/

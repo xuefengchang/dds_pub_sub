@@ -81,6 +81,9 @@ sub_EXTERNAL_OBJECTS =
 
 ../bin/sub: CMakeFiles/sub.dir/src/sub.cpp.o
 ../bin/sub: CMakeFiles/sub.dir/build.make
+../bin/sub: /home/cxf/HDE/x86_64.linux/lib/libddskernel.so
+../bin/sub: /home/cxf/HDE/x86_64.linux/lib/libdcpsisocpp.so
+../bin/sub: /home/cxf/HDE/x86_64.linux/lib/libdcpssacpp.so
 ../bin/sub: ../lib/libopensplice_dds_pub_sub.so
 ../bin/sub: CMakeFiles/sub.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/sub"

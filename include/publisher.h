@@ -1,26 +1,4 @@
-/*
- *                         OpenSplice DDS
- *
- *   This software and documentation are Copyright 2006 to 2013 PrismTech
- *   Limited and its licensees. All rights reserved. See file:
- *
- *                     $OSPL_HOME/LICENSE
- *
- *   for full copyright notice and license terms.
- *
- */
 
-/************************************************************************
- * LOGICAL_NAME:    Chatter.cpp
- * FUNCTION:        OpenSplice NetworkPartition example code.
- * MODULE:          NetworkPartition example.
- * DATE             june 2007.
- ************************************************************************
- *
- * This file contains the implementation for the 'Chatter' executable.
- *
- ***/
- 
 #ifndef PUBLISHER_H_
 #define PUBLISHER_H_
 
@@ -31,8 +9,6 @@
 #include "ccpp_MSFPPacket.h"
 #include "example_main.h"
 
-//#define MAX_PACKET_LEN 256
-
 using namespace DDS;
 
 namespace micros_swarm_framework{
@@ -40,6 +16,13 @@ namespace micros_swarm_framework{
     {
         private:
             int robot_id_;
+            DomainId_t  domain;
+            
+            const char *topic_name_;
+            
+            const char  *partitionName;
+            char  *MSFPPacketTypeName;
+            
             DomainParticipantFactory_var  dpf;
             DomainParticipant_var  participant;
             Topic_var  MSFPPacketTopic;
@@ -49,7 +32,6 @@ namespace micros_swarm_framework{
             PublisherQos  pub_qos;
             DataWriterQos  dw_qos;
 
-            DomainId_t  domain;
             InstanceHandle_t  userHandle;
             ReturnCode_t  status;
 
@@ -58,15 +40,9 @@ namespace micros_swarm_framework{
 
             //Sample definitions
             MSFPPacket  *packet_;
-
-            int  sourceID;
-            int  i;
-            const char  *partitionName;
-            char  *MSFPPacketTypeName;
-            //char  buf[MAX_PACKET_LEN];
             
         public:
-            Publisher();
+            Publisher(std::string topic_name);
             void publish(MSFPPacket *packet);
             ~Publisher();
     };
