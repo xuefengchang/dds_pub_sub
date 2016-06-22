@@ -22,198 +22,151 @@
  ***/
 #include <string>
 #include <iostream>
-#ifndef _WIN32
-#include <unistd.h>
-#else
-#include "os_stdlib.h"
-#include <Windows.h>
-
-static void sleep(int secs)
-{
-    Sleep(secs * 1000);
-}
-#endif
 #include "ccpp_dds_dcps.h"
 #include "check_status.h"
-#include "ccpp_data.h"
+#include "ccpp_MSFPPacket.h"
 #include "example_main.h"
 
-#define MAX_MSG_LEN 256
-#define NUM_MSG 10000
-#define TERMINATION_MESSAGE -1
+#include "publisher.h"
 
 using namespace DDS;
-using namespace NetworkPartitionsData;
 
-int
-OSPL_MAIN (
-    int argc,
-    char *argv[])
+namespace micros_swarm_framework{
+    
+    Publisher::Publisher()
+    {
+        domain = 0;
+        sourceID = 1;
+        partitionName = "test";
+        MSFPPacketTypeName = NULL;
+        
+        //Create a DomainParticipantFactory and a DomainParticipant, using Default QoS settings
+        dpf = DomainParticipantFactory::get_instance ();
+        checkHandle(dpf.in(), "DDS::DomainParticipantFactory::get_instance");
+        participant = dpf->create_participant(domain, PARTICIPANT_QOS_DEFAULT, NULL, STATUS_MASK_NONE);
+        checkHandle(participant.in(), "DDS::DomainParticipantFactory::create_participant");
+
+        //Register the required datatype for MSFPPacket
+        MSFPPacketTS = new MSFPPacketTypeSupport();
+        checkHandle(MSFPPacketTS.in(), "new MSFPPacketTypeSupport");
+        MSFPPacketTypeName = MSFPPacketTS->get_type_name();
+        status = MSFPPacketTS->register_type(
+            participant.in(),
+            MSFPPacketTypeName);
+        checkStatus(status, "NetworkPartitionsData::MSFPPacketTypeSupport::register_type");
+
+        //Set the ReliabilityQosPolicy to BEST_EFFORT_RELIABILITY
+        status = participant->get_default_topic_qos(topic_qos);
+        checkStatus(status, "DDS::DomainParticipant::get_default_topic_qos");
+        topic_qos.reliability.kind = DDS::BEST_EFFORT_RELIABILITY_QOS;
+
+        //Make the tailored QoS the new default
+        status = participant->set_default_topic_qos(topic_qos);
+        checkStatus(status, "DDS::DomainParticipant::set_default_topic_qos");
+
+        //Use the changed policy when defining the MSFPPacket topic
+        MSFPPacketTopic = participant->create_topic(
+            "micros_swarm_framework_topic",
+            MSFPPacketTypeName,
+            topic_qos,
+            NULL,
+            STATUS_MASK_NONE);
+        checkHandle(MSFPPacketTopic.in(), "DDS::DomainParticipant::create_topic (MSFPPacket)");
+
+        //Adapt the default PublisherQos to write into the "test" Partition
+        status = participant->get_default_publisher_qos (pub_qos);
+        checkStatus(status, "DDS::DomainParticipant::get_default_publisher_qos");
+        pub_qos.partition.name.length(1);
+        pub_qos.partition.name[0] = partitionName;
+
+        //Create a Publisher for the ter application
+        publisher_ = participant->create_publisher(pub_qos, NULL, STATUS_MASK_NONE);
+        checkHandle(publisher_.in(), "DDS::DomainParticipant::create_publisher");
+
+        //Create a DataWriter for the MSFPPacket Topic (using the appropriate QoS)
+        parentWriter = publisher_->create_datawriter(
+            MSFPPacketTopic.in(),
+            DATAWRITER_QOS_USE_TOPIC_QOS,
+            NULL,
+            STATUS_MASK_NONE);
+        checkHandle(parentWriter, "DDS::Publisher::create_datawriter (MSFPPacket)");
+
+        //Narrow the abstract parent into its typed representative
+        MSFPPacketDW = MSFPPacketDataWriter::_narrow(parentWriter);
+        checkHandle(MSFPPacketDW.in(), "NetworkPartitionsData::MSFPPacketDataWriter::_narrow");
+        
+        packet_=new micros_swarm_framework::MSFPPacket();
+        packet_->packet_source = 1;
+        packet_->packet_version = 0;
+        packet_->packet_type = 0;
+        packet_->packet_data = "";
+        packet_->package_check_sum=0;
+        
+        userHandle = MSFPPacketDW->register_instance(*packet_);
+    }
+    
+    void Publisher::publish(MSFPPacket *packet)
+    {  
+        packet_ = packet;
+
+        status = MSFPPacketDW->write(*packet_, userHandle);
+        checkStatus(status, "NetworkPartitionsData::MSFPPacketDataWriter::write");
+    }
+    
+    Publisher::~Publisher()
+    {
+        status = MSFPPacketDW->dispose(*packet_, userHandle);
+        checkStatus(status, "NetworkPartitionsData::MSFPPacketDataWriter::dispose");
+        status = MSFPPacketDW->unregister_instance(*packet_, userHandle);
+        checkStatus(status, "NetworkPartitionsData::MSFPPacketDataWriter::unregister_instance");
+
+        //Release the data-samples
+        delete packet_;     
+
+        //Remove the DataWriters 
+        status = publisher_->delete_datawriter(MSFPPacketDW.in() );
+        checkStatus(status, "DDS::Publisher::delete_datawriter (MSFPPacketDW)");
+
+        //Remove the Publisher
+        status = participant->delete_publisher(publisher_.in() );
+        checkStatus(status, "DDS::DomainParticipant::delete_publisher");
+
+        status = participant->delete_topic( MSFPPacketTopic.in() );
+        checkStatus(status, "DDS::DomainParticipant::delete_topic (MSFPPacketTopic)");
+
+        //Remove the type-names
+        string_free(MSFPPacketTypeName);
+
+        //Remove the DomainParticipant
+        status = dpf->delete_participant( participant.in() );
+        checkStatus(status, "DDS::DomainParticipantFactory::delete_participant");
+
+        cout << "Completed ter example" << endl;
+    }
+};
+
+/*
+int main()
 {
-    /* Generic DDS entities */
-    DomainParticipantFactory_var    dpf;
-    DomainParticipant_var           participant;
-    Topic_var                       chatMessageTopic;
-    Publisher_var                   chatPublisher;
-    DataWriter_ptr                  parentWriter;
-
-    /* QosPolicy holders */
-    //TopicQos                        reliable_topic_qos;
-    TopicQos                        topic_qos;
-    PublisherQos                    pub_qos;
-    DataWriterQos                   dw_qos;
-
-    /* DDS Identifiers */
-    DomainId_t                      domain = 0;
-    InstanceHandle_t                userHandle;
-    ReturnCode_t                    status;
-
-    /* Type-specific DDS entities */
-    ChatMessageTypeSupport_var      chatMessageTS;
-    ChatMessageDataWriter_var       talker;
-
-    /* Sample definitions */
-    ChatMessage                     *msg;   /* Example on Heap */
-
-    /* Others */
-    int                             ownID = 1;
-    int                             i;
-    const char                      *partitionName = "ChatRoom1";
-    char                            *chatMessageTypeName = NULL;
-    char                            buf[MAX_MSG_LEN];
-
-#ifdef INTEGRITY
-#ifdef CHATTER_QUIT
-    ownID = -1;
-#else
-    ownID = 1;
-#endif
-#else
-    /* Options: Chatter [ownID] */
-    if (argc > 1) {
-        ownID = atoi(argv[1]);
-    }
-#endif
-
-    /* Create a DomainParticipantFactory and a DomainParticipant (using Default QoS settings. */
-    dpf = DomainParticipantFactory::get_instance ();
-    checkHandle(dpf.in(), "DDS::DomainParticipantFactory::get_instance");
-    participant = dpf->create_participant(domain, PARTICIPANT_QOS_DEFAULT, NULL, STATUS_MASK_NONE);
-    checkHandle(participant.in(), "DDS::DomainParticipantFactory::create_participant");
-
-    /* Register the required datatype for ChatMessage. */
-    chatMessageTS = new ChatMessageTypeSupport();
-    checkHandle(chatMessageTS.in(), "new ChatMessageTypeSupport");
-    chatMessageTypeName = chatMessageTS->get_type_name();
-    status = chatMessageTS->register_type(
-        participant.in(),
-        chatMessageTypeName);
-    checkStatus(status, "NetworkPartitionsData::ChatMessageTypeSupport::register_type");
-
-    /* Set the ReliabilityQosPolicy to RELIABLE. */
-    //status = participant->get_default_topic_qos(reliable_topic_qos);
-    status = participant->get_default_topic_qos(topic_qos);
-    checkStatus(status, "DDS::DomainParticipant::get_default_topic_qos");
-    //reliable_topic_qos.reliability.kind = RELIABLE_RELIABILITY_QOS;
-    topic_qos.reliability.kind = DDS::BEST_EFFORT_RELIABILITY_QOS;
-
-    /* Make the tailored QoS the new default. */
-    //status = participant->set_default_topic_qos(reliable_topic_qos);
-    status = participant->set_default_topic_qos(topic_qos);
-    checkStatus(status, "DDS::DomainParticipant::set_default_topic_qos");
-
-    /* Use the changed policy when defining the ChatMessage topic */
-    chatMessageTopic = participant->create_topic(
-        "Chat_ChatMessage",
-        chatMessageTypeName,
-        //reliable_topic_qos,
-        topic_qos,
-        NULL,
-        STATUS_MASK_NONE);
-    checkHandle(chatMessageTopic.in(), "DDS::DomainParticipant::create_topic (ChatMessage)");
-
-    /* Adapt the default PublisherQos to write into the "ChatRoom1" Partition. */
-    status = participant->get_default_publisher_qos (pub_qos);
-    checkStatus(status, "DDS::DomainParticipant::get_default_publisher_qos");
-    pub_qos.partition.name.length(1);
-    pub_qos.partition.name[0] = partitionName;
-
-    /* Create a Publisher for the chatter application. */
-    chatPublisher = participant->create_publisher(pub_qos, NULL, STATUS_MASK_NONE);
-    checkHandle(chatPublisher.in(), "DDS::DomainParticipant::create_publisher");
-
-    /* Create a DataWriter for the ChatMessage Topic (using the appropriate QoS). */
-    parentWriter = chatPublisher->create_datawriter(
-        chatMessageTopic.in(),
-        DATAWRITER_QOS_USE_TOPIC_QOS,
-        NULL,
-        STATUS_MASK_NONE);
-    checkHandle(parentWriter, "DDS::Publisher::create_datawriter (chatMessage)");
-
-    /* Narrow the abstract parent into its typed representative. */
-    talker = ChatMessageDataWriter::_narrow(parentWriter);
-    checkHandle(talker.in(), "NetworkPartitionsData::ChatMessageDataWriter::_narrow");
-
-    /* Initialize the chat messages on Heap. */
-    msg = new ChatMessage();
-    checkHandle(msg, "new ChatMessage");
-    msg->userID = ownID;
-    msg->index = 0;
-    if (ownID == TERMINATION_MESSAGE) {
-        snprintf(buf, MAX_MSG_LEN, "Termination message.");
-    } else {
-        snprintf(buf, MAX_MSG_LEN, "Hi there, I will send you %d more messages.", NUM_MSG);
-    }
-    msg->content = string_dup(buf);
-    cout << "Writing message: \"" << msg->content  << "\"" << endl;
-
-    /* Register a chat message for this user (pre-allocating resources for it!!) */
-    userHandle = talker->register_instance(*msg);
-
-    /* Write a message using the pre-generated instance handle. */
-    status = talker->write(*msg, userHandle);
-    checkStatus(status, "NetworkPartitionsData::ChatMessageDataWriter::write");
-
-    sleep (1); /* do not run so fast! */
-
-    /* Write any number of messages, re-using the existing string-buffer: no leak!!. */
-    for (i = 1; i <= NUM_MSG && ownID != TERMINATION_MESSAGE; i++) {
-        msg->index = i;
-        snprintf(buf, MAX_MSG_LEN, "Message no. %d", i);
-        msg->content = string_dup(buf);
-        cout << "Writing message: \"" << msg->content << "\"" << endl;
-        status = talker->write(*msg, userHandle);
-        checkStatus(status, "NetworkPartitionsData::ChatMessageDataWriter::write");
-        sleep (1); /* do not run so fast! */
+    micros_swarm_framework::MSFPPacket *packet;
+    char buf[MAX_PACKET_LEN];
+    packet = new micros_swarm_framework::MSFPPacket();
+    checkHandle(packet, "new MSFPPacket");
+    
+    micros_swarm_framework::Publisher publisher;
+    
+    for (int i = 1; i <= NUM_PACKET; i++) {
+        packet->packet_source = 1;
+        packet->packet_version = 0;
+        packet->packet_type = 0;
+        snprintf(buf, MAX_PACKET_LEN, "Packet no. %d", i);
+        packet->packet_data = string_dup(buf);
+        packet->package_check_sum=0;
+        cout << "Writing packet: \"" << packet->packet_data << "\"" << endl;
+        publisher.publish(packet);
+        sleep (1); 
     }
 
-    /* Leave the room by disposing and unregistering the message instance. */
-    status = talker->dispose(*msg, userHandle);
-    checkStatus(status, "NetworkPartitionsData::ChatMessageDataWriter::dispose");
-    status = talker->unregister_instance(*msg, userHandle);
-    checkStatus(status, "NetworkPartitionsData::ChatMessageDataWriter::unregister_instance");
-
-    /* Release the data-samples. */
-    delete msg;     // msg allocated on heap: explicit de-allocation required!!
-
-    /* Remove the DataWriters */
-    status = chatPublisher->delete_datawriter( talker.in() );
-    checkStatus(status, "DDS::Publisher::delete_datawriter (talker)");
-
-    /* Remove the Publisher. */
-    status = participant->delete_publisher( chatPublisher.in() );
-    checkStatus(status, "DDS::DomainParticipant::delete_publisher");
-
-    status = participant->delete_topic( chatMessageTopic.in() );
-    checkStatus(status, "DDS::DomainParticipant::delete_topic (chatMessageTopic)");
-
-    /* Remove the type-names. */
-    string_free(chatMessageTypeName);
-
-    /* Remove the DomainParticipant. */
-    status = dpf->delete_participant( participant.in() );
-    checkStatus(status, "DDS::DomainParticipantFactory::delete_participant");
-
-    cout << "Completed Chatter example" << endl;
     return 0;
 }
+*/

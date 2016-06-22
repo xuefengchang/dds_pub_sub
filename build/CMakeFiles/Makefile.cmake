@@ -42,7 +42,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/libsacpp_pub_sub_types.dir/DependInfo.cmake"
-  "CMakeFiles/publisher.dir/DependInfo.cmake"
-  "CMakeFiles/subscriber.dir/DependInfo.cmake"
+  "CMakeFiles/opensplice_dds_pub_sub.dir/DependInfo.cmake"
+  "CMakeFiles/pub.dir/DependInfo.cmake"
+  "CMakeFiles/sub.dir/DependInfo.cmake"
   )

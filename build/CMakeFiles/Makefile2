@@ -47,114 +47,114 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cxf/dds_pub_sub
+CMAKE_SOURCE_DIR = /home/cxf/code/dds_pub_sub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cxf/dds_pub_sub/build
+CMAKE_BINARY_DIR = /home/cxf/code/dds_pub_sub/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/libsacpp_pub_sub_types.dir
+# Target rules for target CMakeFiles/opensplice_dds_pub_sub.dir
 
 # All Build rule for target.
-CMakeFiles/libsacpp_pub_sub_types.dir/all:
-	$(MAKE) -f CMakeFiles/libsacpp_pub_sub_types.dir/build.make CMakeFiles/libsacpp_pub_sub_types.dir/depend
-	$(MAKE) -f CMakeFiles/libsacpp_pub_sub_types.dir/build.make CMakeFiles/libsacpp_pub_sub_types.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/dds_pub_sub/build/CMakeFiles  1 2 3 4
-	@echo "Built target libsacpp_pub_sub_types"
-.PHONY : CMakeFiles/libsacpp_pub_sub_types.dir/all
+CMakeFiles/opensplice_dds_pub_sub.dir/all:
+	$(MAKE) -f CMakeFiles/opensplice_dds_pub_sub.dir/build.make CMakeFiles/opensplice_dds_pub_sub.dir/depend
+	$(MAKE) -f CMakeFiles/opensplice_dds_pub_sub.dir/build.make CMakeFiles/opensplice_dds_pub_sub.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/code/dds_pub_sub/build/CMakeFiles  1 2 3 4 5 6 7 8
+	@echo "Built target opensplice_dds_pub_sub"
+.PHONY : CMakeFiles/opensplice_dds_pub_sub.dir/all
 
 # Include target in all.
-all: CMakeFiles/libsacpp_pub_sub_types.dir/all
+all: CMakeFiles/opensplice_dds_pub_sub.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/libsacpp_pub_sub_types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libsacpp_pub_sub_types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 0
-.PHONY : CMakeFiles/libsacpp_pub_sub_types.dir/rule
+CMakeFiles/opensplice_dds_pub_sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opensplice_dds_pub_sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 0
+.PHONY : CMakeFiles/opensplice_dds_pub_sub.dir/rule
 
 # Convenience name for target.
-libsacpp_pub_sub_types: CMakeFiles/libsacpp_pub_sub_types.dir/rule
-.PHONY : libsacpp_pub_sub_types
+opensplice_dds_pub_sub: CMakeFiles/opensplice_dds_pub_sub.dir/rule
+.PHONY : opensplice_dds_pub_sub
 
 # clean rule for target.
-CMakeFiles/libsacpp_pub_sub_types.dir/clean:
-	$(MAKE) -f CMakeFiles/libsacpp_pub_sub_types.dir/build.make CMakeFiles/libsacpp_pub_sub_types.dir/clean
-.PHONY : CMakeFiles/libsacpp_pub_sub_types.dir/clean
+CMakeFiles/opensplice_dds_pub_sub.dir/clean:
+	$(MAKE) -f CMakeFiles/opensplice_dds_pub_sub.dir/build.make CMakeFiles/opensplice_dds_pub_sub.dir/clean
+.PHONY : CMakeFiles/opensplice_dds_pub_sub.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/libsacpp_pub_sub_types.dir/clean
+clean: CMakeFiles/opensplice_dds_pub_sub.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/publisher.dir
+# Target rules for target CMakeFiles/pub.dir
 
 # All Build rule for target.
-CMakeFiles/publisher.dir/all: CMakeFiles/libsacpp_pub_sub_types.dir/all
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/depend
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/dds_pub_sub/build/CMakeFiles  5 6
-	@echo "Built target publisher"
-.PHONY : CMakeFiles/publisher.dir/all
+CMakeFiles/pub.dir/all: CMakeFiles/opensplice_dds_pub_sub.dir/all
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/depend
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/code/dds_pub_sub/build/CMakeFiles  9
+	@echo "Built target pub"
+.PHONY : CMakeFiles/pub.dir/all
 
 # Include target in all.
-all: CMakeFiles/publisher.dir/all
+all: CMakeFiles/pub.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/publisher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/publisher.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 0
-.PHONY : CMakeFiles/publisher.dir/rule
+CMakeFiles/pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 0
+.PHONY : CMakeFiles/pub.dir/rule
 
 # Convenience name for target.
-publisher: CMakeFiles/publisher.dir/rule
-.PHONY : publisher
+pub: CMakeFiles/pub.dir/rule
+.PHONY : pub
 
 # clean rule for target.
-CMakeFiles/publisher.dir/clean:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/clean
-.PHONY : CMakeFiles/publisher.dir/clean
+CMakeFiles/pub.dir/clean:
+	$(MAKE) -f CMakeFiles/pub.dir/build.make CMakeFiles/pub.dir/clean
+.PHONY : CMakeFiles/pub.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/publisher.dir/clean
+clean: CMakeFiles/pub.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/subscriber.dir
+# Target rules for target CMakeFiles/sub.dir
 
 # All Build rule for target.
-CMakeFiles/subscriber.dir/all: CMakeFiles/libsacpp_pub_sub_types.dir/all
-	$(MAKE) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/depend
-	$(MAKE) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/dds_pub_sub/build/CMakeFiles  7 8
-	@echo "Built target subscriber"
-.PHONY : CMakeFiles/subscriber.dir/all
+CMakeFiles/sub.dir/all: CMakeFiles/opensplice_dds_pub_sub.dir/all
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/depend
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/code/dds_pub_sub/build/CMakeFiles  10
+	@echo "Built target sub"
+.PHONY : CMakeFiles/sub.dir/all
 
 # Include target in all.
-all: CMakeFiles/subscriber.dir/all
+all: CMakeFiles/sub.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/subscriber.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/subscriber.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/dds_pub_sub/build/CMakeFiles 0
-.PHONY : CMakeFiles/subscriber.dir/rule
+CMakeFiles/sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxf/code/dds_pub_sub/build/CMakeFiles 0
+.PHONY : CMakeFiles/sub.dir/rule
 
 # Convenience name for target.
-subscriber: CMakeFiles/subscriber.dir/rule
-.PHONY : subscriber
+sub: CMakeFiles/sub.dir/rule
+.PHONY : sub
 
 # clean rule for target.
-CMakeFiles/subscriber.dir/clean:
-	$(MAKE) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/clean
-.PHONY : CMakeFiles/subscriber.dir/clean
+CMakeFiles/sub.dir/clean:
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/clean
+.PHONY : CMakeFiles/sub.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/subscriber.dir/clean
+clean: CMakeFiles/sub.dir/clean
 .PHONY : clean
 
 #=============================================================================

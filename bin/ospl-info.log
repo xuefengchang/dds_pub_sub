@@ -1,14 +1,14 @@
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
+Date        : Wed Jun 22 16:38:41 CST 2016
 Description : u_domainNew:Database allocated on heap
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : spliced 7f65bbaa5700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1465393640.764159720
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : spliced 7fa33859b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466584721.839440769
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
+Date        : Wed Jun 22 16:38:41 CST 2016
 Description : ---------------------------------------------------------------
               -- The service is using the following configuration settings --
               ---------------------------------------------------------------
@@ -20,57 +20,57 @@ Description : ---------------------------------------------------------------
               Memory mode          : Heap memory
               Builtin topics       : true
               Priority inheritance : false
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : spliced 7f65bbaa5700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1465393640.767628093
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : spliced 7fa33859b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466584721.846881108
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
+Date        : Wed Jun 22 16:38:41 CST 2016
 Description : Service cmsoap disabled
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : spliced 7f65bbaa5700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1465393640.768113402
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : spliced 7fa33859b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466584721.847082804
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
+Date        : Wed Jun 22 16:38:41 CST 2016
 Description : ++++++++++++++++++++++++++++++++++++++++++++++++
               ++ The service 'splicedaemon' is now operational. 
               ++++++++++++++++++++++++++++++++++++++++++++++++
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : spliced 7f65bbaa5700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393640.768779427
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : spliced 7fa33859b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466584721.847544856
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
+Date        : Wed Jun 22 16:38:41 CST 2016
 Description : ++++++++++++++++++++++++++++++++++++++++++++++++
               ++ The service 'ddsi2' is now operational. 
               ++++++++++++++++++++++++++++++++++++++++++++++++
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : ddsi2 7f65b90ad700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393640.776566945
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : ddsi2 7fa335b90700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466584721.851901367
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:20 CST 2016
-Description : The durability service can by identified by ID: 155172835
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : durability 7f65b941c700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1465393640.880578225
+Date        : Wed Jun 22 16:38:41 CST 2016
+Description : The durability service can by identified by ID: 1203733223
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : durability 7fa335eff700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466584721.855154932
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
+Date        : Wed Jun 22 16:38:44 CST 2016
 Description : u_domainNew:Database allocated on heap
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : spliced 7f1e68fe8700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1465393646.283370945
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : spliced 7f60389de700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1466584724.637275477
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
+Date        : Wed Jun 22 16:38:44 CST 2016
 Description : ---------------------------------------------------------------
               -- The service is using the following configuration settings --
               ---------------------------------------------------------------
@@ -82,69 +82,59 @@ Description : ---------------------------------------------------------------
               Memory mode          : Heap memory
               Builtin topics       : true
               Priority inheritance : false
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : spliced 7f1e68fe8700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1465393646.287268936
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : spliced 7f60389de700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1466584724.643444260
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
+Date        : Wed Jun 22 16:38:44 CST 2016
 Description : Service cmsoap disabled
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : spliced 7f1e68fe8700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1465393646.287550093
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : spliced 7f60389de700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1466584724.643741266
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
+Date        : Wed Jun 22 16:38:44 CST 2016
 Description : ++++++++++++++++++++++++++++++++++++++++++++++++
               ++ The service 'splicedaemon' is now operational. 
               ++++++++++++++++++++++++++++++++++++++++++++++++
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : spliced 7f1e68fe8700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393646.288003103
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : spliced 7f60389de700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466584724.644288073
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
+Date        : Wed Jun 22 16:38:44 CST 2016
 Description : ++++++++++++++++++++++++++++++++++++++++++++++++
               ++ The service 'ddsi2' is now operational. 
               ++++++++++++++++++++++++++++++++++++++++++++++++
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : ddsi2 7f1e667fd700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393646.295463706
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : ddsi2 7f6035fd3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1466584724.647930436
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:26 CST 2016
-Description : The durability service can by identified by ID: 1678815662
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : durability 7f1e66b6c700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1465393646.599892060
+Date        : Wed Jun 22 16:38:44 CST 2016
+Description : The durability service can by identified by ID: 1350803679
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : durability 7f6036342700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1466584724.650460958
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:33 CST 2016
-Description : ++++++++++++++++++++++++++++++++++++++++++++++++
-              ++ The service 'durability' is now operational. 
-              ++++++++++++++++++++++++++++++++++++++++++++++++
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : durability 7f65b941c700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1465393653.999256503
+Date        : Wed Jun 22 16:38:49 CST 2016
+Description : Termination request (signal 2) received from PID 2388 (self), UID 1000
+Node        : ThinkCentre
+Process     : sub <2388>
+Thread      : signalHandler 7fa3367ed700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466584729.424293625
 ========================================================================================
 Report      : INFO
-Date        : Wed Jun 08 21:47:34 CST 2016
-Description : Termination request (signal 2) received from PID 9416 (self), UID 1000
-Node        : ubuntu
-Process     : subscriber <9416>
-Thread      : signalHandler 7f1e6724d700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1465393654.630007524
-========================================================================================
-Report      : INFO
-Date        : Wed Jun 08 21:47:35 CST 2016
-Description : Termination request (signal 2) received from PID 9368 (self), UID 1000
-Node        : ubuntu
-Process     : publisher <9368>
-Thread      : signalHandler 7f65b9d0a700
-Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1465393655.623024472
+Date        : Wed Jun 22 16:38:49 CST 2016
+Description : Termination request (signal 2) received from PID 2442 (self), UID 1000
+Node        : ThinkCentre
+Process     : pub <2442>
+Thread      : signalHandler 7f6036c30700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1466584729.791327759
