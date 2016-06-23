@@ -63,6 +63,8 @@ string
 -
 iostream
 -
+vector
+-
 ccpp_dds_dcps.h
 ../include/ccpp_dds_dcps.h
 check_status.h
@@ -1006,6 +1008,8 @@ os_if.h
 
 /home/cxf/code/dds_pub_sub/src/pub.cpp
 iostream
+-
+vector
 -
 check_status.h
 /home/cxf/code/dds_pub_sub/src/check_status.h

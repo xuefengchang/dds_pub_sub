@@ -21,7 +21,6 @@ namespace micros_swarm_framework{
         infoSeq = new SampleInfoSeq();
         domain = 0;
         terminated = false;
-        partitionName = "test";
         MSFPPacketTypeName = NULL;
     
         //Create a DomainParticipantFactory and a DomainParticipant (using Default QoS settings)
@@ -66,11 +65,18 @@ namespace micros_swarm_framework{
         status = participant->get_default_subscriber_qos (sub_qos);
         checkStatus(status, "DDS::DomainParticipant::get_default_subscriber_qos");
         sub_qos.partition.name.length(1);
-        sub_qos.partition.name[0] = partitionName;
+        std::string partition_name="robot_partition_1";
+        sub_qos.partition.name[0] = partition_name.data();
 
         //Create a Subscriber for the MessageBoard application
         subscriber_ = participant->create_subscriber(sub_qos, NULL, STATUS_MASK_NONE);
         checkHandle(subscriber_.in(), "DDS::DomainParticipant::create_subscriber");
+
+        //status=subscriber_->get_qos(sub_qos);
+        //sub_qos.partition.name.length(1);
+        //partition_name="robot_partition_1";
+        //sub_qos.partition.name[0] = partition_name.data();
+        //status=subscriber_->set_qos(sub_qos);
 
         //Create a DataReader for the NamedMessage Topic (using the appropriate QoS)
         parentReader = subscriber_->create_datareader(
@@ -92,6 +98,9 @@ namespace micros_swarm_framework{
     
     void Subscriber::subscribe()
     {
+        status=subscriber_->get_qos(sub_qos);
+        std::cout<<sub_qos.partition.name[0]<<endl;
+    
         MSFPPacketListener *myListener = new MSFPPacketListener();
         myListener->MSFPPacketDR_ = MSFPPacketDataReader::_narrow(MSFPPacketDR.in());
         checkHandle(myListener->MSFPPacketDR_.in(), "MSFPPacketDataReader::_narrow");

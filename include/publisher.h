@@ -4,6 +4,7 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
 #include "ccpp_dds_dcps.h"
 #include "check_status.h"
 #include "ccpp_MSFPPacket.h"
@@ -15,12 +16,13 @@ namespace micros_swarm_framework{
     class Publisher
     {
         private:
-            int robot_id_;
+            unsigned int robot_id_;
             DomainId_t  domain;
+            
+            std::vector<unsigned int> neighbors_;
             
             const char *topic_name_;
             
-            const char  *partitionName;
             char  *MSFPPacketTypeName;
             
             DomainParticipantFactory_var  dpf;
@@ -43,6 +45,8 @@ namespace micros_swarm_framework{
             
         public:
             Publisher(std::string topic_name);
+            void setNeighbors(std::vector<unsigned int>& neighbors);
+            std::vector<unsigned int> getNeighbors();
             void publish(MSFPPacket *packet);
             ~Publisher();
     };

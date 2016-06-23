@@ -22,7 +22,6 @@ namespace micros_swarm_framework{
             
             const char *topic_name_;
             
-            const char *partitionName;
             char  *MSFPPacketTypeName;
             
             //Generic DDS entities

@@ -29,8 +29,6 @@ namespace micros_swarm_framework{
         MSFPPacketSeq packetSeq;
         SampleInfoSeq infoSeq;
 
-        //status = MSFPPacketDR_->take(packetSeq, infoSeq, LENGTH_UNLIMITED,
-        //  ANY_SAMPLE_STATE, NEW_VIEW_STATE, ANY_INSTANCE_STATE);
         status = MSFPPacketDR_->take(packetSeq, infoSeq, LENGTH_UNLIMITED,
         ANY_SAMPLE_STATE, ANY_VIEW_STATE, ANY_INSTANCE_STATE);
         checkStatus(status, "MSFPPacketDataReader::read");

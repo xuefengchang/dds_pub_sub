@@ -22,3 +22,27 @@ Node        : ThinkCentre
 Process     : pub <10424>
 Thread      : main thread 7f43fa705780
 Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_writerWrite/v_writer.c/2208/0/1466599612.535105234
+========================================================================================
+Report      : API_INFO
+Date        : Thu Jun 23 11:02:38 CST 2016
+Description : DomainParticipant::create_publisher PublisherQos Presentation.coherent_access invalid value
+Node        : ThinkCentre
+Process     : pub <30808>
+Thread      : main thread 7f5e58eaf780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DCPS API/gapi_qos.c/261/4/1466650958.456640990
+========================================================================================
+Report      : API_INFO
+Date        : Thu Jun 23 11:02:38 CST 2016
+Description : DomainParticipant::create_publisher PublisherQos Presentation.ordered_access invalid value
+Node        : ThinkCentre
+Process     : pub <30808>
+Thread      : main thread 7f5e58eaf780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DCPS API/gapi_qos.c/269/4/1466650958.456711785
+========================================================================================
+Report      : API_INFO
+Date        : Thu Jun 23 11:02:38 CST 2016
+Description : DomainParticipant::create_publisher PublisherQos Presentation.access_scope invalid value
+Node        : ThinkCentre
+Process     : pub <30808>
+Thread      : main thread 7f5e58eaf780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DCPS API/gapi_qos.c/279/4/1466650958.456737707
