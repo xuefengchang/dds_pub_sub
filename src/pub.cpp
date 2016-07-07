@@ -16,11 +16,6 @@ int main()
     checkHandle(packet, "new MSFPPacket");
     
     micros_swarm_framework::Publisher publisher("micros_swarm_framework_topic");
-    std::vector<unsigned int> neighbors;
-    neighbors.push_back(1);
-    neighbors.push_back(2);
-    neighbors.push_back(3);
-    publisher.setNeighbors(neighbors);
     
     for (int i = 1; i <= NUM_PACKET; i++) {
         packet->packet_source = 1;

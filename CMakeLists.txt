@@ -13,7 +13,7 @@ find_package (OpenSplice REQUIRED)
 include_directories(cpp ${OpenSplice_INCLUDE_DIRS})
 link_directories(${OpenSplice_LIBRARIES} ${PROJECT_SOURCE_DIR}/lib)
 
-OpenSplice_IDLGEN(idl/MSFPPacket.idl)
+#OpenSplice_IDLGEN(idl/MSFPPacket.idl)
 
 add_definitions (
  ${OpenSplice_DEFINITIONS}

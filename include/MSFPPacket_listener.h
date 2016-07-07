@@ -27,12 +27,13 @@ namespace micros_swarm_framework{
 
     class MSFPPacketListener: public virtual DDS::DataReaderListener
     {
-
         public:
 
             bool closed_;
             MSFPPacketDataReader_var MSFPPacketDR_;
             DDS::GuardCondition_var guardCond_;
+            
+            void (*callBack_)(const MSFPPacket& packet);
 
 	        MSFPPacketListener () 
 	        {

@@ -16,10 +16,8 @@ namespace micros_swarm_framework{
     class Publisher
     {
         private:
-            unsigned int robot_id_;
+            //unsigned int robot_id_;
             DomainId_t  domain;
-            
-            std::vector<unsigned int> neighbors_;
             
             const char *topic_name_;
             
@@ -45,8 +43,6 @@ namespace micros_swarm_framework{
             
         public:
             Publisher(std::string topic_name);
-            void setNeighbors(std::vector<unsigned int>& neighbors);
-            std::vector<unsigned int> getNeighbors();
             void publish(MSFPPacket *packet);
             ~Publisher();
     };

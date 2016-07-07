@@ -35,7 +35,8 @@ namespace micros_swarm_framework{
         
         for (DDS::ULong i = 0; i < packetSeq.length(); i++)
         {
-            cout<<packetSeq[i].packet_source<<": "<<packetSeq[i].packet_version<<", "<<packetSeq[i].packet_type<<", "<<packetSeq[i].packet_data<<", "<<packetSeq[i].package_check_sum<<endl;
+            //cout<<packetSeq[i].packet_source<<": "<<packetSeq[i].packet_version<<", "<<packetSeq[i].packet_type<<", "<<packetSeq[i].packet_data<<", "<<packetSeq[i].package_check_sum<<endl;
+            (*callBack_)(packetSeq[i]);
         }
         status = MSFPPacketDR_->return_loan(packetSeq, infoSeq);
         checkStatus(status, "MSFPPacketDataReader::return_loan");

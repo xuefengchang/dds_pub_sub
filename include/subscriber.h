@@ -16,7 +16,7 @@ namespace micros_swarm_framework{
     class Subscriber
     {
         private:
-            int robot_id_;
+            //int robot_id_;
             DomainId_t  domain;
             ReturnCode_t  status;
             
@@ -48,7 +48,7 @@ namespace micros_swarm_framework{
             
         public:
             Subscriber(std::string topic_name);
-            void subscribe();
+            void subscribe(void (*callBack)(const MSFPPacket& packet));
             void subscribe2();
             ~Subscriber();
     };

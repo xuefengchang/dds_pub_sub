@@ -61,22 +61,16 @@ namespace micros_swarm_framework{
             STATUS_MASK_NONE);
         checkHandle(MSFPPacketTopic.in(), "DDS::DomainParticipant::create_topic (MSFPPacket)");
 
-        //Adapt the default SubscriberQos to read from the "test" Partition
+        //Adapt the default SubscriberQos to read from the "micros_swarm_framework_partion" Partition
         status = participant->get_default_subscriber_qos (sub_qos);
         checkStatus(status, "DDS::DomainParticipant::get_default_subscriber_qos");
         sub_qos.partition.name.length(1);
-        std::string partition_name="robot_partition_1";
+        std::string partition_name="micros_swarm_framework_partion";
         sub_qos.partition.name[0] = partition_name.data();
 
         //Create a Subscriber for the MessageBoard application
         subscriber_ = participant->create_subscriber(sub_qos, NULL, STATUS_MASK_NONE);
         checkHandle(subscriber_.in(), "DDS::DomainParticipant::create_subscriber");
-
-        //status=subscriber_->get_qos(sub_qos);
-        //sub_qos.partition.name.length(1);
-        //partition_name="robot_partition_1";
-        //sub_qos.partition.name[0] = partition_name.data();
-        //status=subscriber_->set_qos(sub_qos);
 
         //Create a DataReader for the NamedMessage Topic (using the appropriate QoS)
         parentReader = subscriber_->create_datareader(
@@ -96,12 +90,10 @@ namespace micros_swarm_framework{
         cout << "subscriber_ started..."<< endl;
     }
     
-    void Subscriber::subscribe()
+    void Subscriber::subscribe(void (*callBack)(const MSFPPacket& packet))
     {
-        status=subscriber_->get_qos(sub_qos);
-        std::cout<<sub_qos.partition.name[0]<<endl;
-    
         MSFPPacketListener *myListener = new MSFPPacketListener();
+        myListener->callBack_ = callBack;  //set callBack function
         myListener->MSFPPacketDR_ = MSFPPacketDataReader::_narrow(MSFPPacketDR.in());
         checkHandle(myListener->MSFPPacketDR_.in(), "MSFPPacketDataReader::_narrow");
 
@@ -111,7 +103,6 @@ namespace micros_swarm_framework{
         myListener->MSFPPacketDR_->set_listener(myListener, mask);
         cout << "=== [MSFPPacketSubscriber] Ready ..." << endl;
         myListener->closed_ = false;
-
     
         //waitset used to avoid spinning in the loop below
         DDS::WaitSet_var ws = new DDS::WaitSet();

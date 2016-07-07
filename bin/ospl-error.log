@@ -46,3 +46,11 @@ Node        : ThinkCentre
 Process     : pub <30808>
 Thread      : main thread 7f5e58eaf780
 Internals   : V6.4.140407OSS/3b83e82/3b83e82/DCPS API/gapi_qos.c/279/4/1466650958.456737707
+========================================================================================
+Report      : API_INFO
+Date        : Wed Jul 06 08:19:31 CST 2016
+Description : specified instance does not belong to writer micros_swarm_framework_topicWriter
+Node        : ThinkCentre
+Process     : pub <28119>
+Thread      : main thread 7f4277223780
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_writerWrite/v_writer.c/2208/0/1467764371.665044835

@@ -59,8 +59,7 @@ namespace micros_swarm_framework{
         status = participant->get_default_publisher_qos (pub_qos);
         checkStatus(status, "DDS::DomainParticipant::get_default_publisher_qos");
         pub_qos.partition.name.length(1);
-        //pub_qos.partition.name[0] = "micros_swarm_framework_default_partion";
-        pub_qos.partition.name[0] = "robot_partition_1";
+        pub_qos.partition.name[0] = "micros_swarm_framework_partion";
 
         //Create a Publisher for the application
         publisher_ = participant->create_publisher(pub_qos, NULL, STATUS_MASK_NONE);
@@ -79,53 +78,19 @@ namespace micros_swarm_framework{
         checkHandle(MSFPPacketDW.in(), "micros_swarm_framework::MSFPPacketDataWriter::_narrow");
         
         packet_=new micros_swarm_framework::MSFPPacket();
-        packet_->packet_source = 1;
-        packet_->packet_version = 0;
-        packet_->packet_type = 0;
-        packet_->packet_data = "";
-        packet_->package_check_sum=0;
-        
-        userHandle = MSFPPacketDW->register_instance(*packet_);
-    }
-    
-    void Publisher::setNeighbors(std::vector<unsigned int>& neighbors)
-    {
-        neighbors_.clear();
-        int len=neighbors.size();
-        for(int i=0;i<len;i++)
-        {
-            neighbors_.push_back(neighbors[i]);
-        }
-    }
-    
-    std::vector<unsigned int> Publisher::getNeighbors()
-    {
-        return neighbors_;
+        //packet_->packet_source = -1;
+        //packet_->packet_version = 0;
+        //packet_->packet_type = 0;
+        //packet_->packet_data = "";
+        //packet_->package_check_sum=0;
+        //userHandle = MSFPPacketDW->register_instance(*packet_);
     }
     
     void Publisher::publish(MSFPPacket *packet)
     {
-        status = publisher_->get_qos (pub_qos);
-        checkStatus(status, "micros_swarm_framework::publish::get_qos");
-        
-        int partition_len=neighbors_.size();
-        pub_qos.partition.name.length(partition_len);
-        
-        for(int i=0;i<partition_len;i++)
-        {
-             std::stringstream s;
-             s << neighbors_[i];
-             std::string partition_name="robot_partition_"+s.str();
-             pub_qos.partition.name[i] = partition_name.data();
-             
-             std::cout<<partition_name.data()<<std::endl;
-        }
-        
-        publisher_->set_qos(pub_qos);
-    
         packet_ = packet;
 
-        //userHandle = MSFPPacketDW->register_instance(*packet_);
+        userHandle = MSFPPacketDW->register_instance(*packet_);
         status = MSFPPacketDW->write(*packet_, userHandle);
         checkStatus(status, "micros_swarm_framework::MSFPPacketDataWriter::write");
     }
