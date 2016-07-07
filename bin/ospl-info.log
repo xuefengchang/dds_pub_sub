@@ -5532,3 +5532,1257 @@ Node        : ThinkCentre
 Process     : pub <20220>
 Thread      : signalHandler 7fcaa842a700
 Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467894446.717045206
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <4164>
+Thread      : spliced 7fbd91051700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904146.128926793
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <4164>
+Thread      : spliced 7fbd91051700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904146.136501099
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <4164>
+Thread      : spliced 7fbd91051700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904146.136943729
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4164>
+Thread      : spliced 7fbd91051700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904146.137571104
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4164>
+Thread      : ddsi2 7fbd8e624700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904146.144772431
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:06 CST 2016
+Description : The durability service can by identified by ID: 937606385
+Node        : lenovo
+Process     : sub <4164>
+Thread      : durability 7fbd8e9b5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904146.247107200
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:13 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4164>
+Thread      : durability 7fbd8e9b5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904153.253569125
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4260>
+Thread      : spliced 7fdbcf3ee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904157.359656605
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4260>
+Thread      : spliced 7fdbcf3ee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904157.364424715
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4260>
+Thread      : spliced 7fdbcf3ee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904157.364653619
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4260>
+Thread      : spliced 7fdbcf3ee700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904157.365000740
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4260>
+Thread      : ddsi2 7fdbcc9e3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904157.369407234
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:17 CST 2016
+Description : The durability service can by identified by ID: 1613201768
+Node        : lenovo
+Process     : pub <4260>
+Thread      : durability 7fdbccd52700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904157.372747577
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:23 CST 2016
+Description : Termination request (signal 2) received from PID 4164 (self), UID 1000
+Node        : lenovo
+Process     : sub <4164>
+Thread      : signalHandler 7fbd8f2a3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904163.636451679
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:09:24 CST 2016
+Description : Termination request (signal 2) received from PID 4260 (self), UID 1000
+Node        : lenovo
+Process     : pub <4260>
+Thread      : signalHandler 7fdbcd640700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904164.160561147
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4490>
+Thread      : spliced 7fa28d450700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904374.255794841
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4490>
+Thread      : spliced 7fa28d450700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904374.262920436
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4490>
+Thread      : spliced 7fa28d450700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904374.263057506
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4490>
+Thread      : spliced 7fa28d450700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904374.263479251
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4490>
+Thread      : ddsi2 7fa28aa45700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904374.266612484
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:12:54 CST 2016
+Description : The durability service can by identified by ID: 1532543002
+Node        : lenovo
+Process     : pub <4490>
+Thread      : durability 7fa28adb4700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904374.269345705
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <4541>
+Thread      : spliced 7f401b5d9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904380.552455381
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <4541>
+Thread      : spliced 7f401b5d9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904380.558809499
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <4541>
+Thread      : spliced 7f401b5d9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904380.559055553
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4541>
+Thread      : spliced 7f401b5d9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904380.559568596
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4541>
+Thread      : ddsi2 7f4018bce700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904380.566398015
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:00 CST 2016
+Description : The durability service can by identified by ID: 187570268
+Node        : lenovo
+Process     : sub <4541>
+Thread      : durability 7f4018f3d700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904380.573212853
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:05 CST 2016
+Description : Termination request (signal 2) received from PID 4541 (self), UID 1000
+Node        : lenovo
+Process     : sub <4541>
+Thread      : signalHandler 7f401982b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904385.911194998
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:13:07 CST 2016
+Description : Termination request (signal 2) received from PID 4490 (self), UID 1000
+Node        : lenovo
+Process     : pub <4490>
+Thread      : signalHandler 7fa28b6a2700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904387.049735821
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4707>
+Thread      : spliced 7fb1b6cc5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904494.926822381
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4707>
+Thread      : spliced 7fb1b6cc5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904494.930617852
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4707>
+Thread      : spliced 7fb1b6cc5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904494.930749043
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4707>
+Thread      : spliced 7fb1b6cc5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904494.931158661
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4707>
+Thread      : ddsi2 7fb1b42ba700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904494.934424682
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:14:54 CST 2016
+Description : The durability service can by identified by ID: 1974933565
+Node        : lenovo
+Process     : pub <4707>
+Thread      : durability 7fb1b4629700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904494.937411002
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <4755>
+Thread      : spliced 7f33db675700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904501.337530413
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <4755>
+Thread      : spliced 7f33db675700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904501.343391173
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <4755>
+Thread      : spliced 7f33db675700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904501.343659319
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4755>
+Thread      : spliced 7f33db675700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904501.344116557
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4755>
+Thread      : ddsi2 7f33d8c6a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904501.348914540
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:01 CST 2016
+Description : The durability service can by identified by ID: 1598271781
+Node        : lenovo
+Process     : sub <4755>
+Thread      : durability 7f33d8fd9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904501.353149905
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:06 CST 2016
+Description : Termination request (signal 2) received from PID 4707 (self), UID 1000
+Node        : lenovo
+Process     : pub <4707>
+Thread      : signalHandler 7fb1b4f17700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904506.803076975
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4808>
+Thread      : spliced 7fe4609ed700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904510.046196386
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4808>
+Thread      : spliced 7fe4609ed700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904510.051219521
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4808>
+Thread      : spliced 7fe4609ed700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904510.051379596
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4808>
+Thread      : spliced 7fe4609ed700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904510.051859336
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4808>
+Thread      : ddsi2 7fe45dfe2700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904510.055923485
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:10 CST 2016
+Description : The durability service can by identified by ID: 220361215
+Node        : lenovo
+Process     : pub <4808>
+Thread      : durability 7fe45e351700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904510.059615658
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:15:15 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 1974933565. (DCPSPublication state 0)
+Node        : lenovo
+Process     : sub <4755>
+Thread      : OSPL Garbage Collector 7f33d92b9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1467904515.353572610
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:17 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4755>
+Thread      : durability 7f33d8fd9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904517.471213424
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:19 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4808>
+Thread      : durability 7fe45e351700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904519.970383262
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:25 CST 2016
+Description : Termination request (signal 2) received from PID 4808 (self), UID 1000
+Node        : lenovo
+Process     : pub <4808>
+Thread      : signalHandler 7fe45ec3f700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904525.543859690
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4857>
+Thread      : spliced 7efd070bc700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904527.680909676
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4857>
+Thread      : spliced 7efd070bc700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904527.685978062
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4857>
+Thread      : spliced 7efd070bc700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904527.686267437
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4857>
+Thread      : spliced 7efd070bc700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904527.686616684
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4857>
+Thread      : ddsi2 7efd046b1700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904527.691028651
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:27 CST 2016
+Description : The durability service can by identified by ID: 1486140556
+Node        : lenovo
+Process     : pub <4857>
+Thread      : durability 7efd04a20700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904527.694233349
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:15:35 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 220361215. (DCPSPublication state 1)
+Node        : lenovo
+Process     : sub <4755>
+Thread      : OSPL Garbage Collector 7f33d92b9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1467904535.361727790
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:15:36 CST 2016
+Description : writer 5f43b125:5b:1:902 considering reader 75b7183d:5b:1:1107 non-responsive
+
+Node        : lenovo
+Process     : sub <4755>
+Thread      : xmit.user 7f33d88eb700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/ddsi2/q_transmit.c/787/0/1467904536.050907933
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:15:36 CST 2016
+Description : writer 5f43b125:5b:1:902 considering reader d2271ff:5b:1:1107 non-responsive
+
+Node        : lenovo
+Process     : sub <4755>
+Thread      : xmit.user 7f33d88eb700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/ddsi2/q_transmit.c/787/0/1467904536.050994022
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:36 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4857>
+Thread      : durability 7efd04a20700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904536.102988134
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:44 CST 2016
+Description : Termination request (signal 2) received from PID 4857 (self), UID 1000
+Node        : lenovo
+Process     : pub <4857>
+Thread      : signalHandler 7efd0530e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904544.552021799
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:15:45 CST 2016
+Description : Termination request (signal 2) received from PID 4755 (self), UID 1000
+Node        : lenovo
+Process     : sub <4755>
+Thread      : signalHandler 7f33d98c7700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904545.635406599
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <4949>
+Thread      : spliced 7f58d2ef3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904569.175537351
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <4949>
+Thread      : spliced 7f58d2ef3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904569.181853917
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <4949>
+Thread      : spliced 7f58d2ef3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904569.182077178
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4949>
+Thread      : spliced 7f58d2ef3700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904569.182534750
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4949>
+Thread      : ddsi2 7f58d04e8700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904569.187751662
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:09 CST 2016
+Description : The durability service can by identified by ID: 335327964
+Node        : lenovo
+Process     : sub <4949>
+Thread      : durability 7f58d0857700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904569.291813730
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <4997>
+Thread      : spliced 7f08a1c79700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904572.182244156
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <4997>
+Thread      : spliced 7f08a1c79700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904572.193176495
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <4997>
+Thread      : spliced 7f08a1c79700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904572.193469703
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4997>
+Thread      : spliced 7f08a1c79700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904572.193878726
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4997>
+Thread      : ddsi2 7f089f26e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904572.197315893
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:12 CST 2016
+Description : The durability service can by identified by ID: 1405281746
+Node        : lenovo
+Process     : pub <4997>
+Thread      : durability 7f089f5dd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904572.200181378
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:19 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <4949>
+Thread      : durability 7f58d0857700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904579.602890613
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:22 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <4997>
+Thread      : durability 7f089f5dd700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904582.111557676
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:16:58 CST 2016
+Description : Termination request (signal 2) received from PID 4997 (self), UID 1000
+Node        : lenovo
+Process     : pub <4997>
+Thread      : signalHandler 7f089fecb700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904618.323419639
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <5056>
+Thread      : spliced 7f87d405a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904620.914430717
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <5056>
+Thread      : spliced 7f87d405a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904620.924017234
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <5056>
+Thread      : spliced 7f87d405a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904620.924363137
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5056>
+Thread      : spliced 7f87d405a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904620.925013685
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5056>
+Thread      : ddsi2 7f87d164f700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904620.930244591
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:00 CST 2016
+Description : The durability service can by identified by ID: 940788387
+Node        : lenovo
+Process     : pub <5056>
+Thread      : durability 7f87d19be700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904620.934458194
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:09 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5056>
+Thread      : durability 7f87d19be700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904629.043026616
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:17:09 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 1405281746. (DCPSPublication state 1)
+Node        : lenovo
+Process     : sub <4949>
+Thread      : OSPL Garbage Collector 7f58d0b37700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1467904629.190642502
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:17:18 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 1405281746. (DCPSPublication state 1)
+Node        : lenovo
+Process     : pub <5056>
+Thread      : OSPL Garbage Collector 7f87d1c9e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1467904638.938888455
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:53 CST 2016
+Description : Termination request (signal 2) received from PID 5056 (self), UID 1000
+Node        : lenovo
+Process     : pub <5056>
+Thread      : signalHandler 7f87d22ac700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904673.131271359
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:17:53 CST 2016
+Description : Termination request (signal 2) received from PID 4949 (self), UID 1000
+Node        : lenovo
+Process     : sub <4949>
+Thread      : signalHandler 7f58d1145700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904673.642140732
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <5189>
+Thread      : spliced 7fe5ec549700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904725.028085612
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <5189>
+Thread      : spliced 7fe5ec549700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904725.036487576
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <5189>
+Thread      : spliced 7fe5ec549700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904725.036673062
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5189>
+Thread      : spliced 7fe5ec549700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904725.037046577
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5189>
+Thread      : ddsi2 7fe5e9b3e700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904725.041537493
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:45 CST 2016
+Description : The durability service can by identified by ID: 1358205233
+Node        : lenovo
+Process     : pub <5189>
+Thread      : durability 7fe5e9ead700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904725.045678593
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <5237>
+Thread      : spliced 7f8b77cef700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904729.014552403
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <5237>
+Thread      : spliced 7f8b77cef700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904729.024218247
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <5237>
+Thread      : spliced 7f8b77cef700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904729.024567513
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <5237>
+Thread      : spliced 7f8b77cef700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904729.025291291
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <5237>
+Thread      : ddsi2 7f8b752e4700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904729.030843112
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:49 CST 2016
+Description : The durability service can by identified by ID: 1881873554
+Node        : lenovo
+Process     : sub <5237>
+Thread      : durability 7f8b75653700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904729.034802192
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:56 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5189>
+Thread      : durability 7fe5e9ead700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904736.358566068
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:18:58 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <5237>
+Thread      : durability 7f8b75653700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904738.945693028
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:19:36 CST 2016
+Description : Termination request (signal 2) received from PID 5237 (self), UID 1000
+Node        : lenovo
+Process     : sub <5237>
+Thread      : signalHandler 7f8b75f41700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904776.702414322
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:19:37 CST 2016
+Description : Termination request (signal 2) received from PID 5189 (self), UID 1000
+Node        : lenovo
+Process     : pub <5189>
+Thread      : signalHandler 7fe5ea79b700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/signalHandlerThread/os_signalHandler.c/503/0/1467904777.080853149
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:43 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <5355>
+Thread      : spliced 7fdd973e5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467904843.989668684
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:43 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <5355>
+Thread      : spliced 7fdd973e5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467904843.993908311
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:43 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <5355>
+Thread      : spliced 7fdd973e5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467904843.994188561
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:43 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5355>
+Thread      : spliced 7fdd973e5700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904843.994430648
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:43 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <5355>
+Thread      : ddsi2 7fdd949da700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467904843.997532870
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:20:44 CST 2016
+Description : The durability service can by identified by ID: 1516199370
+Node        : lenovo
+Process     : pub <5355>
+Thread      : durability 7fdd94d49700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467904844.000338445
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : sub <6097>
+Thread      : spliced 7f66dc275700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467905624.143779185
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : sub <6097>
+Thread      : spliced 7f66dc275700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467905624.158809374
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : sub <6097>
+Thread      : spliced 7f66dc275700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467905624.159371001
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <6097>
+Thread      : spliced 7f66dc275700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467905624.160649775
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <6097>
+Thread      : ddsi2 7f66d986a700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467905624.169660415
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:44 CST 2016
+Description : The durability service can by identified by ID: 460202758
+Node        : lenovo
+Process     : sub <6097>
+Thread      : durability 7f66d9bd9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467905624.172455942
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : u_domainNew:Database allocated on heap
+Node        : lenovo
+Process     : pub <6146>
+Thread      : spliced 7fb4c65c9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/user::u_domain::u_domainNew/u_domain.c/706/0/1467905627.377918882
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : lenovo
+Process     : pub <6146>
+Thread      : spliced 7fb4c65c9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/The OpenSplice domain service/u_domain.c/827/0/1467905627.389234102
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : Service cmsoap disabled
+Node        : lenovo
+Process     : pub <6146>
+Thread      : spliced 7fb4c65c9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/OpenSplice domain service/sr_componentInfo.c/439/0/1467905627.389388846
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <6146>
+Thread      : spliced 7fb4c65c9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467905627.389688299
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : pub <6146>
+Thread      : ddsi2 7fb49fb32700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467905627.392821509
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:47 CST 2016
+Description : The durability service can by identified by ID: 1309198190
+Node        : lenovo
+Process     : pub <6146>
+Thread      : durability 7fb4c418c700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/DurabilityService/d_durability.c/476/0/1467905627.396285403
+========================================================================================
+Report      : INFO
+Date        : Thu Jul 07 23:33:52 CST 2016
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : lenovo
+Process     : sub <6097>
+Thread      : durability 7f66d9bd9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_serviceChangeState/v_service.c/329/0/1467905632.482184778
+========================================================================================
+Report      : WARNING
+Date        : Thu Jul 07 23:33:58 CST 2016
+Description : Missed heartbeat for node - heartbeat id : 1309198190. (DCPSPublication state 1)
+Node        : lenovo
+Process     : sub <6097>
+Thread      : OSPL Garbage Collector 7f66d9eb9700
+Internals   : V6.4.140407OSS/3b83e82/3b83e82/v_spliced/v_spliced.c/2439/0/1467905638.169239068

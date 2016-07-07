@@ -77,7 +77,7 @@ namespace micros_swarm_framework{
         MSFPPacketDW = MSFPPacketDataWriter::_narrow(parentWriter);
         checkHandle(MSFPPacketDW.in(), "micros_swarm_framework::MSFPPacketDataWriter::_narrow");
         
-        packet_=new micros_swarm_framework::MSFPPacket();
+        //packet_=new micros_swarm_framework::MSFPPacket();
         //packet_->packet_source = -1;
         //packet_->packet_version = 0;
         //packet_->packet_type = 0;
@@ -86,9 +86,9 @@ namespace micros_swarm_framework{
         //userHandle = MSFPPacketDW->register_instance(*packet_);
     }
     
-    void Publisher::publish(MSFPPacket *packet)
+    void Publisher::publish(MSFPPacket packet)
     {
-        packet_ = packet;
+        packet_ = &packet;
 
         userHandle = MSFPPacketDW->register_instance(*packet_);
         status = MSFPPacketDW->write(*packet_, userHandle);
