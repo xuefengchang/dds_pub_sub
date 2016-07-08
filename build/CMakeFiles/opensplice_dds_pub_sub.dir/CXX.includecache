@@ -1006,7 +1006,7 @@ kernelModule.h
 os_if.h
 /home/cxf/HDE/x86_64.linux/include/sys/os_if.h
 
-/home/cxf/code/dds_pub_sub/src/publisher.cpp
+/home/cxf/dds_pub_sub/src/publisher.cpp
 string
 -
 iostream
@@ -1016,13 +1016,13 @@ sstream
 vector
 -
 ccpp_dds_dcps.h
-/home/cxf/code/dds_pub_sub/src/ccpp_dds_dcps.h
+/home/cxf/dds_pub_sub/src/ccpp_dds_dcps.h
 check_status.h
-/home/cxf/code/dds_pub_sub/src/check_status.h
+/home/cxf/dds_pub_sub/src/check_status.h
 ccpp_MSFPPacket.h
-/home/cxf/code/dds_pub_sub/src/ccpp_MSFPPacket.h
+/home/cxf/dds_pub_sub/src/ccpp_MSFPPacket.h
 example_main.h
-/home/cxf/code/dds_pub_sub/src/example_main.h
+/home/cxf/dds_pub_sub/src/example_main.h
 publisher.h
-/home/cxf/code/dds_pub_sub/src/publisher.h
+/home/cxf/dds_pub_sub/src/publisher.h
 

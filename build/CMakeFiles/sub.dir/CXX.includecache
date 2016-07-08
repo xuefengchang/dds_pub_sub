@@ -1020,11 +1020,11 @@ kernelModule.h
 os_if.h
 /home/cxf/HDE/x86_64.linux/include/sys/os_if.h
 
-/home/cxf/code/dds_pub_sub/src/sub.cpp
+/home/cxf/dds_pub_sub/src/sub.cpp
 iostream
 -
 check_status.h
-/home/cxf/code/dds_pub_sub/src/check_status.h
+/home/cxf/dds_pub_sub/src/check_status.h
 subscriber.h
-/home/cxf/code/dds_pub_sub/src/subscriber.h
+/home/cxf/dds_pub_sub/src/subscriber.h
 

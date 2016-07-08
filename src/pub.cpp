@@ -10,13 +10,12 @@ using namespace DDS;
 
 int main()
 {
-    //micros_swarm_framework::MSFPPacket *packet;
-    char buf[MAX_PACKET_LEN];
-    //packet = new micros_swarm_framework::MSFPPacket();
     micros_swarm_framework::MSFPPacket packet;
     checkHandle(&packet, "new MSFPPacket");
     
-    micros_swarm_framework::Publisher publisher("micros_swarm_framework_topic");
+    char buf[MAX_PACKET_LEN];
+    
+    micros_swarm_framework::Publisher publisher("micros_swarm_framework_topic", 1);
     
     for (int i = 1; i <= NUM_PACKET; i++) {
         packet.packet_source = 1;

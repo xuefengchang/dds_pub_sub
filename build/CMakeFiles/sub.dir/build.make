@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cxf/code/dds_pub_sub
+CMAKE_SOURCE_DIR = /home/cxf/dds_pub_sub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cxf/code/dds_pub_sub/build
+CMAKE_BINARY_DIR = /home/cxf/dds_pub_sub/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sub.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/sub.dir/flags.make
 
 CMakeFiles/sub.dir/src/sub.cpp.o: CMakeFiles/sub.dir/flags.make
 CMakeFiles/sub.dir/src/sub.cpp.o: ../src/sub.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/code/dds_pub_sub/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cxf/dds_pub_sub/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/sub.dir/src/sub.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sub.dir/src/sub.cpp.o -c /home/cxf/code/dds_pub_sub/src/sub.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sub.dir/src/sub.cpp.o -c /home/cxf/dds_pub_sub/src/sub.cpp
 
 CMakeFiles/sub.dir/src/sub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sub.dir/src/sub.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cxf/code/dds_pub_sub/src/sub.cpp > CMakeFiles/sub.dir/src/sub.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cxf/dds_pub_sub/src/sub.cpp > CMakeFiles/sub.dir/src/sub.cpp.i
 
 CMakeFiles/sub.dir/src/sub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sub.dir/src/sub.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cxf/code/dds_pub_sub/src/sub.cpp -o CMakeFiles/sub.dir/src/sub.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cxf/dds_pub_sub/src/sub.cpp -o CMakeFiles/sub.dir/src/sub.cpp.s
 
 CMakeFiles/sub.dir/src/sub.cpp.o.requires:
 .PHONY : CMakeFiles/sub.dir/src/sub.cpp.o.requires
@@ -101,6 +101,6 @@ CMakeFiles/sub.dir/clean:
 .PHONY : CMakeFiles/sub.dir/clean
 
 CMakeFiles/sub.dir/depend:
-	cd /home/cxf/code/dds_pub_sub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cxf/code/dds_pub_sub /home/cxf/code/dds_pub_sub /home/cxf/code/dds_pub_sub/build /home/cxf/code/dds_pub_sub/build /home/cxf/code/dds_pub_sub/build/CMakeFiles/sub.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cxf/dds_pub_sub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cxf/dds_pub_sub /home/cxf/dds_pub_sub /home/cxf/dds_pub_sub/build /home/cxf/dds_pub_sub/build /home/cxf/dds_pub_sub/build/CMakeFiles/sub.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sub.dir/depend
 

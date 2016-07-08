@@ -14,11 +14,13 @@ using namespace DDS;
 
 namespace micros_swarm_framework{
     
-    Publisher::Publisher(std::string topic_name)
+    Publisher::Publisher(std::string topic_name, unsigned int robot_id)
     {
         domain = 0;
         
         topic_name_ = topic_name.data();
+        
+        robot_id_ = robot_id;
         
         MSFPPacketTypeName = NULL;
         
@@ -77,20 +79,17 @@ namespace micros_swarm_framework{
         MSFPPacketDW = MSFPPacketDataWriter::_narrow(parentWriter);
         checkHandle(MSFPPacketDW.in(), "micros_swarm_framework::MSFPPacketDataWriter::_narrow");
         
-        //packet_=new micros_swarm_framework::MSFPPacket();
-        //packet_->packet_source = -1;
-        //packet_->packet_version = 0;
-        //packet_->packet_type = 0;
-        //packet_->packet_data = "";
-        //packet_->package_check_sum=0;
-        //userHandle = MSFPPacketDW->register_instance(*packet_);
+        packet_=new micros_swarm_framework::MSFPPacket();
+        packet_->packet_source = robot_id_;
+      
+        userHandle = MSFPPacketDW->register_instance(*packet_);
     }
     
     void Publisher::publish(MSFPPacket packet)
     {
         packet_ = &packet;
+        packet_->packet_source = robot_id_;
 
-        userHandle = MSFPPacketDW->register_instance(*packet_);
         status = MSFPPacketDW->write(*packet_, userHandle);
         checkStatus(status, "micros_swarm_framework::MSFPPacketDataWriter::write");
     }

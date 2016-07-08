@@ -1,3 +1,3 @@
-/home/cxf/code/dds_pub_sub/build/CMakeFiles/opensplice_dds_pub_sub.dir
-/home/cxf/code/dds_pub_sub/build/CMakeFiles/pub.dir
-/home/cxf/code/dds_pub_sub/build/CMakeFiles/sub.dir
+/home/cxf/dds_pub_sub/build/CMakeFiles/opensplice_dds_pub_sub.dir
+/home/cxf/dds_pub_sub/build/CMakeFiles/pub.dir
+/home/cxf/dds_pub_sub/build/CMakeFiles/sub.dir

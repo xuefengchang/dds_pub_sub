@@ -4,13 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cxf/code/dds_pub_sub/src/sub.cpp" "/home/cxf/code/dds_pub_sub/build/CMakeFiles/sub.dir/src/sub.cpp.o"
+  "/home/cxf/dds_pub_sub/src/sub.cpp" "/home/cxf/dds_pub_sub/build/CMakeFiles/sub.dir/src/sub.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cxf/code/dds_pub_sub/build/CMakeFiles/opensplice_dds_pub_sub.dir/DependInfo.cmake"
+  "/home/cxf/dds_pub_sub/build/CMakeFiles/opensplice_dds_pub_sub.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

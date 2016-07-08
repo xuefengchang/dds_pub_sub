@@ -1006,13 +1006,13 @@ kernelModule.h
 os_if.h
 /home/cxf/HDE/x86_64.linux/include/sys/os_if.h
 
-/home/cxf/code/dds_pub_sub/src/pub.cpp
+/home/cxf/dds_pub_sub/src/pub.cpp
 iostream
 -
 vector
 -
 check_status.h
-/home/cxf/code/dds_pub_sub/src/check_status.h
+/home/cxf/dds_pub_sub/src/check_status.h
 publisher.h
-/home/cxf/code/dds_pub_sub/src/publisher.h
+/home/cxf/dds_pub_sub/src/publisher.h
 

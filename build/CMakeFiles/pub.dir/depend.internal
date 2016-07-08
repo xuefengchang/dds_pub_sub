@@ -124,4 +124,4 @@ CMakeFiles/pub.dir/src/pub.cpp.o
  /home/cxf/HDE/x86_64.linux/include/sys/os_time.h
  /home/cxf/HDE/x86_64.linux/include/sys/q_expr.h
  /home/cxf/HDE/x86_64.linux/include/sys/v_kernel.h
- /home/cxf/code/dds_pub_sub/src/pub.cpp
+ /home/cxf/dds_pub_sub/src/pub.cpp
